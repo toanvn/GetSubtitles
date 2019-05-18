@@ -560,10 +560,9 @@ class GetSubtitles(object):
                         else:
                             extract_sub_name = extract_sub_name. \
                                 encode(GetSubtitles.output_encode)
-                    print(prefix + ' ' + extract_sub_name)
+                    print(extract_sub_name)
                 except UnicodeDecodeError:
-                    print(prefix + ' '
-                          + extract_sub_name.encode('gbk'))
+                    print(extract_sub_name.encode('gbk'))
         return extract_sub_names
 
     def start(self):
