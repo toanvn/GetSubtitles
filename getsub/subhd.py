@@ -133,12 +133,12 @@ class SubHDDownloader(object):
                 chunk_size = 1024  # 单次请求最大值
                 # 内容体总大小
                 content_size = int(response.headers['content-length'])
-                bar = ProgressBar(prefix + ' Get',
-                                  file_name.strip(), content_size)
+                #bar = ProgressBar(prefix + ' Get',
+                                  #file_name.strip(), content_size)
                 sub_data_bytes = b''
                 for data in response.iter_content(chunk_size=chunk_size):
                     sub_data_bytes += data
-                    bar.refresh(len(sub_data_bytes))
+                    #bar.refresh(len(sub_data_bytes))
             # sub_data_bytes = requests.get(download_link, timeout=10).content
         except requests.Timeout:
             return None, None, 'false'
