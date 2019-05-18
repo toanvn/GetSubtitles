@@ -44,7 +44,7 @@ class SubHDDownloader(object):
                          按语言值降序排列
                 字幕包含语言值：英文加1， 繁体加2， 简体加4， 双语加8 """
 
-        print(prefix + ' Searching SUBHD...', end='\r')
+        #print(prefix + ' Searching SUBHD...', end='\r')
 
         keywords = list(keywords)
         keyword = ''
