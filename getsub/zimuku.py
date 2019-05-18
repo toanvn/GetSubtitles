@@ -36,7 +36,7 @@ class ZimukuDownloader(object):
 
     def get_subtitles(self, keywords, sub_num=10):
 
-        print(prefix + ' Searching ZIMUKU...', end='\r')
+        #print(prefix + ' Searching ZIMUKU...', end='\r')
 
         keywords = list(keywords)
         keyword = ' '.join(keywords)

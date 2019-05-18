@@ -30,7 +30,7 @@ class ZimuzuDownloader(object):
 
     def get_subtitles(self, keywords, sub_num=5):
 
-        print(prefix + ' Searching ZIMUZU...', end='\r')
+        #print(prefix + ' Searching ZIMUZU...', end='\r')
 
         keywords = list(keywords)
         keyword = ''
