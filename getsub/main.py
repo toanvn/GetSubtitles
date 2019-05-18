@@ -562,6 +562,7 @@ class GetSubtitles(object):
                                 encode(GetSubtitles.output_encode)
                     #print(extract_sub_name)
                 except UnicodeDecodeError:
+                    a+=1
                     #print(extract_sub_name.encode('gbk'))
         return extract_sub_names
 
